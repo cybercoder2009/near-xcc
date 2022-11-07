@@ -1,0 +1,20 @@
+[package]
+name = "master"
+version = "0.0.1"
+authors = ["Cubic6 <dev@cubic6.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = { version = "4.0.0" }
+serde = { version = "1.0.145" }
+common = { path = "../common" }
+
+[dev-dependencies]
+anyhow = { version = "1.0" }
+serde_json = { version = "1.0.87" }
+near-units = { version = "0.2.0" }
+near-workspaces = { version = "0.6.0" }
+tokio = { version = "1.10.0", features = ["full"] }
